@@ -1,0 +1,58 @@
+@import "../fonts/stylesheet.css";
+
+*,
+body,
+html {
+  background-color: #444;
+  color: #eee;
+}
+
+:root {
+  --mdc-theme-primary: #7289da;
+  --mdc-theme-secondary: #eee;
+  --mdc-theme-background: #36393e !important;
+  --mdc-text-field-outline-color: #eee !important;
+}
+.mdc-button--outlined {
+  --mdc-theme-primary: #353535;
+}
+input,
+select,
+textarea {
+  color: #eee !important;
+}
+.mdc-text-field {
+  border-color: #eee !important;
+  color: #eee;
+}
+.mdc-floating-label {
+  color: #acbdbd !important;
+  /* Overwrite mdc's label for a very nice dark mode */
+}
+.center .parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center .child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.mdc-text-field__input {
+  width: 800px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "product_sansregular";
+}
+
+h1 {
+  font-size: 4em;
+}
